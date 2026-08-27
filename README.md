@@ -1,7 +1,6 @@
-# ⚛️ Qiskit Fall Fest 2026 — Nairobi Edition
+# ⚛️ Qiskit Fall Fest 2026 Nairobi
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg)](https://opensource.org/licenses/MIT)
-[![Community: AstraCode](https://img.shields.io/badge/Community-AstraCode-15003c.svg)](https://github.com/astracodeke)
+[![Community: AstraCode](https://img.shields.io/badge/Community-AstraCode-15003c.svg)]
 [![Powered by: IBM Quantum](https://img.shields.io/badge/Powered%20by-IBM%20Quantum-69509e.svg)](https://www.ibm.com/quantum/qiskit)
 
 Official website and event platform for **Qiskit Fall Fest 2026 Kenya**, organized by **AstraCode Community** in collaboration with **IBM Quantum** and regional university partner societies.
