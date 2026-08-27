@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qiskit Fall Fest 2026 Nairobi</title>
+
+  <!-- External Tailwind CSS and Web Fonts -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ====================================================================
+       TAILWIND CONFIGURATION
+       ==================================================================== -->
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container-low": "#eff3ff",
+            "secondary-fixed-dim": "#ffb0ca",
+            "surface-container-highest": "#dbe3f4",
+            "on-tertiary-container": "#a46dff",
+            "on-secondary": "#ffffff",
+            "tertiary-fixed": "#ecdcff",
+            "surface": "#f8f9ff",
+            "secondary": "#a13765",
+            "surface-tint": "#69509e",
+            "on-secondary-fixed-variant": "#821e4d",
+            "on-tertiary": "#ffffff",
+            "inverse-surface": "#29313e",
+            "tertiary": "#17003a",
+            "on-surface": "#141c28",
+            "on-background": "#141c28",
+            "on-tertiary-fixed": "#270057",
+            "primary": "#15003c",
+            "on-surface-variant": "#494550",
+            "on-primary-container": "#977ecf",
+            "outline-variant": "#cbc4d2",
+            "on-error": "#ffffff",
+            "error": "#ba1a1a",
+            "on-secondary-container": "#761343",
+            "on-tertiary-fixed-variant": "#5c14b7",
+            "primary-fixed": "#eaddff",
+            "surface-container": "#e6eeff",
+            "tertiary-container": "#32006e",
+            "surface-bright": "#f8f9ff",
+            "on-secondary-fixed": "#3e001f",
+            "on-primary-fixed": "#240357",
+            "primary-fixed-dim": "#d1bcff",
+            "surface-container-high": "#e0e8f9",
+            "surface-container-lowest": "#ffffff",
+            "surface-variant": "#dbe3f4",
+            "primary-container": "#2d1160",
+            "background": "#f8f9ff",
+            "surface-dim": "#d2daeb",
+            "secondary-container": "#fc80b0",
+            "tertiary-fixed-dim": "#d5bbff",
+            "on-primary-fixed-variant": "#503884",
+            "inverse-primary": "#d1bcff",
+            "inverse-on-surface": "#ebf1ff",
+            "on-error-container": "#93000a",
+            "on-primary": "#ffffff",
+            "error-container": "#ffdad6",
+            "secondary-fixed": "#ffd9e3",
+            "outline": "#7a7581"
+          },
+          borderRadius: {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+          spacing: {
+            "gutter": "24px",
+            "container-max": "1280px",
+            "base": "8px",
+            "margin-desktop": "64px",
+            "margin-mobile": "20px"
+          },
+          fontFamily: {
+            "headline-lg": ["Poppins"],
+            "headline-lg-mobile": ["Poppins"],
+            "body-md": ["Poppins"],
+            "mono-data": ["Poppins"],
+            "label-md": ["Poppins"],
+            "headline-md": ["Poppins"],
+            "body-lg": ["Poppins"],
+            "display-lg": ["Poppins"]
+          },
+          fontSize: {
+            "headline-lg": ["32px", { lineHeight: "40px", fontWeight: "700" }],
+            "headline-lg-mobile": ["24px", { lineHeight: "32px", fontWeight: "700" }],
+            "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+            "mono-data": ["14px", { lineHeight: "20px", fontWeight: "500" }],
+            "label-md": ["14px", { lineHeight: "20px", letterSpacing: "0.05em", fontWeight: "600" }],
+            "headline-md": ["24px", { lineHeight: "32px", fontWeight: "700" }],
+            "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+            "display-lg": ["48px", { lineHeight: "56px", letterSpacing: "0", fontWeight: "700" }]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="font-body-md text-body-md antialiased overflow-x-hidden bg-surface-container-high relative">
+
+  <!-- ====================================================================
+       BACKGROUND AMBIENT GLOW EFFECTS
+       ==================================================================== -->
+  <div class="ambient-glow w-[450px] h-[450px] top-[92%] -left-[200px] opacity-50"></div>
+  <div class="ambient-glow w-[350px] h-[350px] top-[80%] -right-[100px] opacity-80"></div>
+  <div class="ambient-glow w-[500px] h-[500px] top-[55%] -left-[250px] opacity-60"></div>
+  <div class="ambient-glow w-[400px] h-[400px] top-[25%] -right-[150px] opacity-70"></div>
+  <div class="ambient-glow w-[600px] h-[600px] top-[10%] -left-[200px]"></div>
+  <div class="ambient-glow w-[800px] h-[800px] top-[40%] -right-[300px]"></div>
+  <div class="ambient-glow w-[500px] h-[500px] bottom-[15%] -left-[150px]"></div>
+
+  <!-- ====================================================================
+       TOP NAVIGATION BAR
+       ==================================================================== -->
+  <nav class="bg-surface-bright/90 backdrop-blur-md fixed top-0 w-full z-50 border-b border-outline-variant shadow-sm">
+    <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+      <div class="font-headline-lg text-headline-md font-bold text-on-surface tracking-tight flex items-center">
+        <img alt="Qiskit Fall Fest pink badge" class="h-10 w-10 inline-block mr-4" src="images/badge-pink.svg">
+        Qiskit Fall Fest 2026
+      </div>
+      <div class="hidden md:flex space-x-8">
+        <a class="text-on-surface-variant hover:text-primary transition-colors font-body-lg text-body-lg hover:bg-surface-container transition-all duration-300 px-3 py-2 rounded" href="#home">Home</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors font-body-lg text-body-lg hover:bg-surface-container transition-all duration-300 px-3 py-2 rounded" href="#about">About</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors font-body-lg text-body-lg hover:bg-surface-container transition-all duration-300 px-3 py-2 rounded" href="#schedule">Schedule</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors font-body-lg text-body-lg hover:bg-surface-container transition-all duration-300 px-3 py-2 rounded" href="#faq">FAQ</a>
+      </div>
+      <a class="primary-btn px-6 py-2 rounded-full font-body-lg font-semibold" href="https://forms.gle/cGXpDa88s2ShDuq16" target="_blank" rel="noopener">Register</a>
+    </div>
+  </nav>
+
+  <!-- ====================================================================
+       MAIN CONTAINER
+       ==================================================================== -->
+  <main class="pt-24 px-8 max-w-7xl mx-auto pb-0 relative z-0">
+
+    <!-- HERO SECTION -->
+    <section class="min-h-[65vh] flex items-center py-10 md:py-16 border-b border-outline-variant/30 relative" id="home">
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center w-full">
+    
+    <div class="lg:col-span-8 flex flex-col items-start z-10">
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold glow-text text-on-surface leading-tight mb-6">
+        Explore Quantum Computing at Qiskit Fall Fest 2026
+      </h1>
+      
+      <p class="text-base sm:text-lg lg:text-xl text-on-surface-variant mb-8 leading-relaxed max-w-2xl">
+        The premier series of student-led quantum computing events in Kenya. Learn foundational quantum concepts, build using Qiskit SDK, and solve real-world problems.
+      </p>
+      
+      <div class="flex flex-wrap gap-y-3 gap-x-6 sm:gap-x-8 text-sm text-on-surface-variant font-medium mb-10">
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-secondary text-lg">calendar_month</span>
+          October 18 – November 13, 2026
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-secondary text-lg">location_on</span>
+          Kenyatta University Main Campus &amp; Virtual
+        </div>
+      </div>
+
+      <div class="flex flex-wrap gap-4">
+        <a class="primary-btn px-8 py-3 rounded-full font-semibold inline-block" href="https://forms.gle/cGXpDa88s2ShDuq16" target="_blank" rel="noopener">Register Now</a>
+        <a href="#schedule" class="ghost-btn px-8 py-3 rounded-full font-semibold inline-block text-center">Explore Schedule</a>
+      </div>
+    </div>
+
+    <div class="lg:col-span-4 flex justify-center items-center">
+      <img 
+        src="images/badge-pink.svg" 
+        alt="Qiskit Fall Fest pink badge" 
+        class="w-48 sm:w-60 lg:w-full max-w-[280px] xl:max-w-[320px] h-auto object-contain drop-shadow-sm transition-transform duration-300 hover:scale-105"
+      >
+    </div>
+
+  </div>
+</section>
+
+    <!-- ABOUT SECTION -->
+    <section class="py-12 border-b border-outline-variant/30" id="intro-section">
+      <div class="about-bg-overlay rounded-3xl p-6 sm:p-8 md:p-10 border border-outline-variant/50 shadow-sm">
+        <div class="flex flex-col md:flex-row items-center gap-8 lg:gap-12">
+          <div class="w-full md:w-5/12 flex-shrink-0 flex justify-start">
+            <img
+              alt="Qiskit Fall Fest 2026"
+              class="w-full max-w-[480px] h-auto object-contain rounded-2xl shadow-sm"
+              src="images/Hero 2 with tile.png"
+            >
+          </div>
+
+          <div class="w-full md:w-7/12 text-left">
+            <h2 class="font-headline-lg text-headline-lg font-bold text-on-surface mb-5">
+              What is Qiskit Fall Fest?
+            </h2>
+            <div class="space-y-4 font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+              <p>
+                Qiskit Fall Fest is a global collection of quantum computing events powered by IBM Quantum that empowers university students, researchers, and tech enthusiasts to delve into quantum hardware and software.
+              </p>
+              <p>
+                From beginner-friendly foundational sessions to hands-on programming with the Qiskit SDK and high-intensity hackathon challenges, this festival brings quantum tech within reach for everyone.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20" id="about">
+      <h2 class="font-headline-lg text-headline-lg mb-12 border-b border-outline-variant pb-4 text-on-surface">What to Expect</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="glass-card p-8 rounded-2xl flex flex-col gap-4">
+          <span class="material-symbols-outlined text-[#ff82b2] text-5xl" data-icon="school">school</span>
+          <h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Hands-on Workshops</h3>
+          <p class="text-on-surface-variant font-body-lg">Learn the fundamentals of quantum computing and Qiskit through guided, interactive sessions led by community leaders.</p>
+        </div>
+        <div class="glass-card p-8 rounded-2xl flex flex-col gap-4">
+          <span class="material-symbols-outlined text-primary-container text-5xl" data-icon="psychology">psychology</span>
+          <h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Expert Training</h3>
+          <p class="text-on-surface-variant font-body-lg">Deep dive into advanced topics, error mitigation, and cutting-edge hardware with exclusive training materials.</p>
+        </div>
+        <div class="glass-card p-8 rounded-2xl flex flex-col gap-4">
+          <span class="material-symbols-outlined text-[#ff82b2] text-5xl" data-icon="code_blocks">code_blocks</span>
+          <h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Hackathon Challenge</h3>
+          <p class="text-on-surface-variant font-body-lg">Compete with fellow students to solve real-world problems using quantum algorithms.</p>
+        </div>
+        <div class="glass-card p-8 rounded-2xl flex flex-col gap-4">
+          <span class="material-symbols-outlined text-primary-container text-5xl" data-icon="groups">groups</span>
+          <h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Community Building</h3>
+          <p class="text-on-surface-variant font-body-lg">Network with peers, researchers, and IBM Quantum experts. Forge connections that will accelerate your quantum journey.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOSTING TEAM SECTION -->
+    <section class="py-10 border-b border-outline-variant/30" id="hosts">
+      <div class="about-bg-overlay rounded-3xl p-6 sm:p-8 md:p-10 border border-outline-variant/50 shadow-sm">
+        <div class="flex flex-col md:flex-row items-center justify-start gap-8 md:gap-10">
+          <!-- Left Column: Hugs the image width closely with no empty column margin -->
+          <div class="shrink-0 flex items-center justify-center">
+            <img
+              alt="AstraCode Logo"
+              class="w-[240px] sm:w-[280px] h-auto object-contain rounded-2xl"
+              src="images/AstraCode Logos.png"
+            >
+          </div>
+
+          <!-- Right Column: Expands directly beside the logo -->
+          <div class="flex-1 text-left">
+            <span class="font-label-md text-label-md font-bold uppercase tracking-wider text-secondary block mb-1">
+              Organizing Host
+            </span>
+            <h2 class="font-headline-lg text-headline-lg font-bold text-on-surface mb-3">
+              AstraCode Community
+            </h2>
+            <div class="space-y-3 font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+              <p class="font-bold italic text-primary">Every major, One Code</p>
+              <p>
+                A multi-university tech community where students explore technology, innovate and create real impact within their fields.
+              </p>
+              <p>
+                We're building a generation of students from all disciplines who use Tech to solve problems and drive change, helping them find where they fit in the Tech space.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCHEDULE SECTION -->
+    <section class="py-20" id="schedule">
+      <h2 class="font-headline-lg text-headline-lg mb-12 border-b border-outline-variant pb-4 text-on-surface">Event Schedule</h2>
+      <div class="relative max-w-4xl mx-auto">
+        <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-outline-variant hidden md:block"></div>
+        <div class="space-y-12 relative">
+          <!-- Timeline Event 1 -->
+          <div class="flex flex-col md:flex-row items-center justify-between w-full">
+            <div class="w-full md:w-[45%] md:text-right mb-4 md:mb-0">
+              <div class="inline-block bg-primary-container/10 text-primary-container px-4 py-2 rounded-full font-mono-data text-mono-data mb-2">18 OCT 2026</div>
+              <h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2">Intro to Quantum</h3>
+              <p class="text-on-surface-variant font-body-lg">Speaker: QuantumKe • Online</p>
+            </div>
+            <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-primary-container border-4 border-surface-container-high z-10"></div>
+            <div class="w-full md:w-[45%]"></div>
+          </div>
+          <!-- Timeline Event 2 -->
+          <div class="flex flex-col md:flex-row-reverse items-center justify-between w-full">
+            <div class="w-full md:w-[45%] mb-4 md:mb-0">
+              <div class="inline-block bg-[#ff82b2]/20 text-[#761343] px-4 py-2 rounded-full font-mono-data text-mono-data mb-2">25 OCT 2026</div>
+              <h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2">Intro to Qiskit SDK</h3>
+              <p class="text-on-surface-variant font-body-lg">Speaker: Qiskit Advocate • Online</p>
+            </div>
+            <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-[#ff82b2] border-4 border-surface-container-high z-10"></div>
+            <div class="w-full md:w-[45%]"></div>
+          </div>
+          <!-- Timeline Event 3 -->
+          <div class="flex flex-col md:flex-row items-center justify-between w-full">
+            <div class="w-full md:w-[45%] md:text-right mb-4 md:mb-0">
+              <div class="inline-block bg-primary-container/10 text-primary-container px-4 py-2 rounded-full font-mono-data text-mono-data mb-2">FRI 6 NOV 2026</div>
+              <h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2">Workshop</h3>
+              <p class="text-on-surface-variant font-body-lg">Speaker: IBM Quantum • Hybrid</p>
+            </div>
+            <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-primary-container border-4 border-surface-container-high z-10"></div>
+            <div class="w-full md:w-[45%]"></div>
+          </div>
+          <!-- Timeline Event 4 -->
+          <div class="flex flex-col md:flex-row-reverse items-center justify-between w-full">
+            <div class="w-full md:w-[45%] mb-4 md:mb-0">
+              <div class="inline-block bg-[#ff82b2]/20 text-[#761343] px-4 py-2 rounded-full font-mono-data text-mono-data mb-2">13 NOV 2026</div>
+              <h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2">Hackathon</h3>
+              <p class="text-on-surface-variant font-body-lg">Speaker: Kenyatta University • Physical</p>
+            </div>
+            <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-[#ff82b2] border-4 border-surface-container-high z-10"></div>
+            <div class="w-full md:w-[45%]"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COLLABORATION TEAMS SECTION -->
+    <section class="pt-2 pb-10" id="collaborators">
+      <h2 class="font-headline-lg text-headline-lg text-left mb-6 text-on-surface">Partnering Societies</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- IEEE Moi -->
+        <div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant shadow-sm min-h-[200px] flex flex-col items-center justify-center text-center gap-6">
+          <img src="images/ieee moi logo.jfif" alt="IEEE Moi University logo" class="h-24 w-full object-contain">
+          <h3 class="font-headline-md-mobile text-headline-md-mobile text-on-surface">IEEE Moi University</h3>
+        </div>
+
+        <!-- IEEE KU -->
+        <div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant shadow-sm min-h-[200px] flex flex-col items-center justify-center text-center gap-6">
+          <img src="images/ieee ku logo.jfif" alt="IEEE Kenyatta University logo" class="h-24 w-full object-contain">
+          <h3 class="font-headline-md-mobile text-headline-md-mobile text-on-surface">IEEE Kenyatta University</h3>
+        </div>
+
+        <!-- GDG KU -->
+        <div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant shadow-sm min-h-[200px] flex flex-col items-center justify-center text-center gap-6">
+          <img src="images/gdg logo.jfif" alt="Google Developer Groups logo" class="h-24 w-full object-contain">
+          <h3 class="font-headline-md-mobile text-headline-md-mobile text-on-surface">GDG on Campus Kenyatta University</h3>
+        </div>
+
+        <!-- GDG Meru -->
+        <div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant shadow-sm min-h-[200px] flex flex-col items-center justify-center text-center gap-6">
+          <img src="images/gdg logo.jfif" alt="Google Developer Groups logo" class="h-24 w-full object-contain">
+          <h3 class="font-headline-md-mobile text-headline-md-mobile text-on-surface">GDG on Campus Meru University</h3>
+        </div>
+
+        <!-- MMU CIT Club (Scaled up to match visual weight) -->
+        <div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant shadow-sm min-h-[200px] flex flex-col items-center justify-center text-center gap-6">
+          <img src="images/mmucit.jfif" alt="MMU CIT logo" class="h-28 w-full object-contain scale-125">
+          <h3 class="font-headline-md-mobile text-headline-md-mobile text-on-surface">Multimedia University CIT Club</h3>
+        </div>
+
+        <!-- SheCodes Chuka -->
+        <div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant shadow-sm min-h-[200px] flex flex-col items-center justify-center text-center gap-6">
+          <img src="images/shecodes.jfif" alt="SheCodes Chuka logo" class="h-24 w-full object-contain">
+          <h3 class="font-headline-md-mobile text-headline-md-mobile text-on-surface">She Codes Africa Chuka University</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="pt-10 pb-20" id="faq">
+      <div class="max-w-7xl mx-auto px-8">
+        <h2 class="faq-heading mb-6 text-on-surface text-center">Frequently Asked Questions</h2>
+        <p class="text-on-surface-variant font-body-lg mb-12 text-center">Everything you need to know about joining Qiskit Fall Fest 2026.</p>
+        
+        <div class="space-y-6 max-w-4xl mx-auto">
+          <!-- FAQ Item 1 -->
+          <div class="faq-item bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant shadow-sm transition-all duration-300">
+            <div class="faq-toggle flex justify-between items-center cursor-pointer">
+              <span class="faq-question text-on-surface">What is Qiskit Fall Fest?</span>
+              <span class="material-symbols-outlined text-primary text-3xl faq-icon transition-transform duration-300">expand_more</span>
+            </div>
+            <div class="faq-answer hidden mt-4 pt-4 border-t border-outline-variant text-on-surface-variant">
+              Qiskit Fall Fest is a global series of student-led quantum computing events supported by IBM Quantum.
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="faq-item bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant shadow-sm transition-all duration-300">
+            <div class="faq-toggle flex justify-between items-center cursor-pointer">
+              <span class="faq-question text-on-surface">Is the event free to attend?</span>
+              <span class="material-symbols-outlined text-primary text-3xl faq-icon transition-transform duration-300">expand_more</span>
+            </div>
+            <div class="faq-answer hidden mt-4 pt-4 border-t border-outline-variant text-on-surface-variant">
+              Yes, Qiskit Fall Fest is completely free for all participants.
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="faq-item bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant shadow-sm transition-all duration-300">
+            <div class="faq-toggle flex justify-between items-center cursor-pointer">
+              <span class="faq-question text-on-surface">Do I need prior quantum computing experience?</span>
+              <span class="material-symbols-outlined text-primary text-3xl faq-icon transition-transform duration-300">expand_more</span>
+            </div>
+            <div class="faq-answer hidden mt-4 pt-4 border-t border-outline-variant text-on-surface-variant">
+              No prior experience is necessary! We offer introductory workshops designed specifically for beginners.
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="faq-item bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant shadow-sm transition-all duration-300">
+            <div class="faq-toggle flex justify-between items-center cursor-pointer">
+              <span class="faq-question text-on-surface">Can I join virtually if I cannot travel to the venue?</span>
+              <span class="material-symbols-outlined text-primary text-3xl faq-icon transition-transform duration-300">expand_more</span>
+            </div>
+            <div class="faq-answer hidden mt-4 pt-4 border-t border-outline-variant text-on-surface-variant">
+              Yes, sessions marked as Virtual or Online will be accessible remotely.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================================================================
+       FOOTER
+       ==================================================================== -->  
+  <footer class="bg-surface-bright w-full pt-14 pb-8 border-t border-outline-variant/60 relative z-10">
+  <div class="max-w-7xl mx-auto px-8">
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pb-12 border-b border-outline-variant/40">
+      
+      <div class="space-y-4">
+        <div class="flex items-center gap-3">
+          <img src="images/badge-pink.svg" alt="Qiskit Logo" class="h-7 w-auto object-contain">
+          <span class="font-headline-md text-headline-md font-bold text-on-surface">Qiskit Fall Fest 2026</span>
+        </div>
+        <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Empowering the next generation of quantum innovators globally, hosted by AstraCode Community.
+        </p>
+      </div>
+
+      <div class="space-y-3">
+        <h3 class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-on-surface">Get in Touch</h3>
+        <div class="space-y-2.5 font-body-md text-body-md text-on-surface-variant">
+          <a href="mailto:astracodeke@gmail.com" class="flex items-center gap-2.5 hover:text-primary transition-colors">
+            <span class="material-symbols-outlined text-secondary text-lg">mail</span>
+            <span>astracodeke@gmail.com</span>
+          </a>
+          <a href="tel:+254791029014" class="flex items-center gap-2.5 hover:text-primary transition-colors">
+            <span class="material-symbols-outlined text-secondary text-lg">call</span>
+            <span>+254 791 029 014</span>
+          </a>
+          <div class="flex items-center gap-2.5 text-on-surface-variant pt-1">
+            <span class="material-symbols-outlined text-secondary text-lg">location_on</span>
+            <span>Nairobi, Kenya</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-3">
+        <h3 class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-on-surface">Connect</h3>
+        <p class="font-body-md text-body-md text-on-surface-variant mb-2">Follow AstraCode for event updates and challenges.</p>
+        <div class="flex flex-col gap-2 font-body-md text-body-md">
+          <a href="https://x.com/astracodeke" target="_blank" rel="noopener" class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors">
+            <span class="font-mono-data font-bold text-xs bg-surface-container px-2 py-0.5 rounded">𝕏</span>
+            <span>@astracodeke</span>
+          </a>
+          <a href="https://www.instagram.com/astracodeke/" target="_blank" rel="noopener" class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors">
+            <span class="material-symbols-outlined text-base">photo_camera</span>
+            <span>@astracodeke</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 font-mono-data text-mono-data text-on-surface-variant text-xs">
+      <div>
+        © 2026 IBM Quantum &amp; AstraCode Community. All rights reserved.
+      </div>
+      <div class="flex items-center gap-6">
+        <span>Every Major, One Code.</span>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+  <!-- ====================================================================
+       INTERACTIVE JAVASCRIPT LOGIC
+       ==================================================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // FAQ Accordion Interactivity
+      const faqToggles = document.querySelectorAll('.faq-toggle');
+      
+      faqToggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+          const item = toggle.parentElement;
+          const answer = item.querySelector('.faq-answer');
+          const icon = toggle.querySelector('.faq-icon');
+          
+          const isHidden = answer.classList.contains('hidden');
+          
+          if (isHidden) {
+            answer.classList.remove('hidden');
+            icon.style.transform = 'rotate(180deg)';
+          } else {
+            answer.classList.add('hidden');
+            icon.style.transform = 'rotate(0deg)';
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

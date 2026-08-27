@@ -1,0 +1,81 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #e0e8f9;
+  color: #141c28;
+  scroll-behavior: smooth;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border: 1px solid #cbc4d2;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+.glass-card:hover {
+  border-color: #2d1160;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.primary-btn {
+  background-color: #2d1160;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+  background: linear-gradient(90deg, #15003c, #2d1160);
+  box-shadow: 0 0 20px rgba(45, 17, 96, 0.3);
+}
+
+.ghost-btn {
+  border: 1px solid #2d1160;
+  background: transparent;
+  color: #2d1160;
+  transition: all 0.3s ease;
+}
+
+.ghost-btn:hover {
+  background: rgba(45, 17, 96, 0.05);
+}
+
+.glow-text {
+  text-shadow: 0 0 20px rgba(45, 17, 96, 0.2);
+}
+
+.ambient-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(21, 0, 60, 0.25) 0%, rgba(45, 17, 96, 0.1) 50%, transparent 70%);
+}
+
+.faq-heading {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 600;
+}
+
+.faq-question {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+.faq-answer {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.hero-section {
+  background-image: linear-gradient(90deg, rgba(248, 249, 255, 0.97) 0%, rgba(248, 249, 255, 0.82) 50%, rgba(248, 249, 255, 0.35) 100%), url('images/Hero 1 without title.png');
+  background-position: center;
+  background-size: cover;
+  border-radius: 1rem;
+}
