@@ -79,3 +79,48 @@ body {
   background-size: cover;
   border-radius: 1rem;
 }
+
+.partner-card h3 {
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partner-logo-frame {
+  width: 100%;
+  height: 144px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.partner-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.partner-logo--wide {
+  transform: scale(1.08);
+}
+
+.partner-logo--zoom {
+  transform: scale(1.22);
+}
+
+.partner-logo--mmu {
+  transform: scale(1.34);
+}
+
+.partner-logo--aws {
+  transform: scale(1.05);
+}
+
+@media (max-width: 767px) {
+  .partner-logo-frame {
+    height: 156px;
+  }
+}
